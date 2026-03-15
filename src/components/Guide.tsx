@@ -32,21 +32,21 @@ export default function Guide() {
                   {guide.heading}
                 </p>
 
-                <h2 className="font-heading text-5xl md:text-6xl text-charcoal mb-2 leading-[0.95]">
+                <h2 className="font-heading text-5xl md:text-6xl text-bark mb-2 leading-[0.95]">
                   {guide.name.split(" ")[0]}
                 </h2>
-                <h2 className="font-heading text-5xl md:text-6xl italic font-light text-terracotta-500 mb-6 leading-[0.95]">
+                <h2 className="font-heading text-5xl md:text-6xl italic text-terracotta-600 mb-6 leading-[0.95]">
                   {guide.name.split(" ")[1]}
                 </h2>
 
-                <p className="text-[11px] tracking-[0.15em] uppercase text-charcoal/80 mb-8 font-body">
+                <p className="text-[11px] tracking-[0.15em] uppercase text-body mb-8 font-body">
                   {guide.credentials}
                 </p>
 
                 {guide.bio.map((p, i) => (
                   <p
                     key={i}
-                    className="text-charcoal leading-[1.85] mb-5 last:mb-0 text-[15px]"
+                    className="text-body leading-[1.85] mb-5 last:mb-0 text-[15px]"
                   >
                     {p}
                   </p>

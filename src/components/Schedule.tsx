@@ -3,7 +3,7 @@ import FadeIn from "./FadeIn";
 
 export default function Schedule() {
   return (
-    <section id="schedule" className="relative py-16 md:py-20 px-8 md:px-16 overflow-hidden">
+    <section id="schedule" className="relative py-12 md:py-14 px-8 md:px-16 overflow-hidden">
       {/* Subtle background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-cream via-sand/50 to-cream" />
 
@@ -13,9 +13,9 @@ export default function Schedule() {
             <p className="font-body text-xs tracking-[0.3em] uppercase text-gold mb-4">
               7 Days of Transformation
             </p>
-            <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl text-charcoal leading-[1.05]">
+            <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl text-bark leading-[1.05]">
               Your Week
-              <span className="italic font-light text-terracotta-500"> at a Glance</span>
+              <span className="italic text-terracotta-600"> at a Glance</span>
             </h2>
           </div>
         </FadeIn>
@@ -36,14 +36,14 @@ export default function Schedule() {
                   <span className="font-body text-[10px] tracking-[0.3em] uppercase text-gold block mb-1">
                     {day.day}
                   </span>
-                  <h3 className="font-heading text-2xl md:text-3xl text-charcoal leading-tight">
+                  <h3 className="font-heading text-2xl md:text-3xl text-bark leading-tight">
                     {day.title}
                   </h3>
                 </div>
 
                 {/* Description */}
                 <div className="md:col-span-7">
-                  <p className="text-charcoal/90 leading-[1.85] text-[15px] md:pl-8 md:border-l border-gold/20">
+                  <p className="text-body leading-[1.85] text-[15px] md:pl-8 md:border-l border-gold/20">
                     {day.description}
                   </p>
                 </div>

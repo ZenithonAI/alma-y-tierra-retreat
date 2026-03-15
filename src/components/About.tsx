@@ -4,7 +4,7 @@ import FadeIn from "./FadeIn";
 
 export default function About() {
   return (
-    <section id="about" className="relative py-16 md:py-20 px-8 md:px-16 overflow-hidden">
+    <section id="about" className="relative py-12 md:py-14 px-8 md:px-16 overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute top-20 right-0 w-64 h-64 bg-terracotta-100/30 rounded-full blur-[100px]" />
       <div className="absolute bottom-20 left-0 w-48 h-48 bg-forest-100/30 rounded-full blur-[80px]" />
@@ -43,9 +43,9 @@ export default function About() {
               <p className="font-body text-xs tracking-[0.3em] uppercase text-gold mb-4">
                 The Retreat
               </p>
-              <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl text-charcoal mb-8 leading-[1.05]">
+              <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl text-bark mb-8 leading-[1.05]">
                 <span className="block">{about.heading.split(" ")[0]}</span>
-                <span className="block italic font-light text-terracotta-500">
+                <span className="block italic text-terracotta-600">
                   {about.heading.split(" ").slice(1).join(" ")}
                 </span>
               </h2>
@@ -53,7 +53,7 @@ export default function About() {
               {about.paragraphs.map((p, i) => (
                 <p
                   key={i}
-                  className="text-charcoal leading-[1.85] mb-5 last:mb-0 text-[15px]"
+                  className="text-body leading-[1.85] mb-5 last:mb-0 text-[15px]"
                 >
                   {p}
                 </p>

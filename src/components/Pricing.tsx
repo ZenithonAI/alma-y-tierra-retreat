@@ -3,7 +3,7 @@ import FadeIn from "./FadeIn";
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="relative py-16 md:py-20 px-8 md:px-16 overflow-hidden">
+    <section id="pricing" className="relative py-12 md:py-14 px-8 md:px-16 overflow-hidden">
       {/* Background blurs */}
       <div className="absolute top-32 left-0 w-96 h-96 bg-forest-100/30 rounded-full blur-[120px]" />
       <div className="absolute bottom-32 right-0 w-80 h-80 bg-terracotta-100/30 rounded-full blur-[100px]" />
@@ -14,11 +14,11 @@ export default function Pricing() {
             <p className="font-body text-xs tracking-[0.3em] uppercase text-gold mb-4">
               Pricing
             </p>
-            <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl text-charcoal leading-[1.05] mb-6">
+            <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl text-bark leading-[1.05] mb-6">
               Investment
-              <span className="italic font-light text-terracotta-500"> in Yourself</span>
+              <span className="italic text-terracotta-600"> in Yourself</span>
             </h2>
-            <p className="text-charcoal/90 max-w-xl mx-auto text-[15px] leading-relaxed">
+            <p className="text-body max-w-xl mx-auto text-[15px] leading-relaxed">
               {pricing.subheading}
             </p>
           </div>
@@ -75,7 +75,7 @@ export default function Pricing() {
                   </div>
                   <p
                     className={`text-xs tracking-[0.15em] uppercase font-body mb-2 ${
-                      option.highlighted ? "text-cream/80" : "text-charcoal/70"
+                      option.highlighted ? "text-cream/80" : "text-body"
                     }`}
                   >
                     {option.period}
@@ -117,7 +117,7 @@ export default function Pricing() {
                           className={`${
                             option.highlighted
                               ? "text-cream/90"
-                              : "text-charcoal/90"
+                              : "text-body"
                           }`}
                         >
                           {feature}

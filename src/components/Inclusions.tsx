@@ -45,7 +45,7 @@ const iconSvgs: Record<string, React.ReactNode> = {
 
 export default function Inclusions() {
   return (
-    <section id="inclusions" className="relative py-16 md:py-20 px-8 md:px-16 bg-charcoal grain overflow-hidden">
+    <section id="inclusions" className="relative py-12 md:py-14 px-8 md:px-16 bg-charcoal grain overflow-hidden">
       {/* Warm accent glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-terracotta-900/20 rounded-full blur-[120px]" />
 

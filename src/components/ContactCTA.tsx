@@ -44,7 +44,7 @@ export default function ContactCTA() {
   }
 
   return (
-    <section id="contact" className="relative py-16 md:py-20 px-8 md:px-16 overflow-hidden bg-sand/40">
+    <section id="contact" className="relative py-12 md:py-14 px-8 md:px-16 overflow-hidden bg-sand/40">
       {/* Background warmth */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-terracotta-100/20 rounded-full blur-[120px]" />
 
@@ -58,13 +58,13 @@ export default function ContactCTA() {
               <p className="font-body text-xs tracking-[0.3em] uppercase text-gold mb-4">
                 Get in Touch
               </p>
-              <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl text-charcoal leading-[1.05] mb-6">
+              <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl text-bark leading-[1.05] mb-6">
                 Ready to
-                <span className="block italic font-light text-terracotta-500">
+                <span className="block italic text-terracotta-600">
                   Begin?
                 </span>
               </h2>
-              <p className="text-charcoal/90 leading-[1.85] text-[15px] mb-12">
+              <p className="text-body leading-[1.85] text-[15px] mb-12">
                 {contact.subheading}
               </p>
 
@@ -77,7 +77,7 @@ export default function ContactCTA() {
                       <p className="text-[10px] tracking-[0.3em] uppercase text-gold/70 mb-1 font-body">
                         Location
                       </p>
-                      <p className="text-charcoal/80 text-sm">
+                      <p className="text-body text-sm">
                         Oaxaca de Juarez, Mexico
                       </p>
                     </div>
@@ -85,7 +85,7 @@ export default function ContactCTA() {
                       <p className="text-[10px] tracking-[0.3em] uppercase text-gold/70 mb-1 font-body">
                         Dates
                       </p>
-                      <p className="text-charcoal/80 text-sm">
+                      <p className="text-body text-sm">
                         November 8–14, 2026
                       </p>
                     </div>
@@ -93,7 +93,7 @@ export default function ContactCTA() {
                       <p className="text-[10px] tracking-[0.3em] uppercase text-gold/70 mb-1 font-body">
                         Availability
                       </p>
-                      <p className="text-charcoal/80 text-sm">
+                      <p className="text-body text-sm">
                         12 spots — limited enrollment
                       </p>
                     </div>
@@ -123,7 +123,7 @@ export default function ContactCTA() {
                   <div>
                     <label
                       htmlFor="name"
-                      className="block text-[11px] tracking-[0.2em] uppercase text-charcoal/80 mb-3 font-body font-medium"
+                      className="block text-[11px] tracking-[0.2em] uppercase text-body mb-3 font-body font-medium"
                     >
                       Name
                     </label>
@@ -139,7 +139,7 @@ export default function ContactCTA() {
                   <div>
                     <label
                       htmlFor="email"
-                      className="block text-[11px] tracking-[0.2em] uppercase text-charcoal/80 mb-3 font-body font-medium"
+                      className="block text-[11px] tracking-[0.2em] uppercase text-body mb-3 font-body font-medium"
                     >
                       Email
                     </label>
@@ -157,7 +157,7 @@ export default function ContactCTA() {
                 <div>
                   <label
                     htmlFor="message"
-                    className="block text-[11px] tracking-[0.2em] uppercase text-charcoal/80 mb-3 font-body font-medium"
+                    className="block text-[11px] tracking-[0.2em] uppercase text-body mb-3 font-body font-medium"
                   >
                     Message
                   </label>

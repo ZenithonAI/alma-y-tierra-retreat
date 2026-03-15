@@ -8,16 +8,16 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section id="faq" className="relative py-16 md:py-20 px-8 md:px-16 bg-sand/40">
+    <section id="faq" className="relative py-12 md:py-14 px-8 md:px-16 bg-sand/40">
       <div className="max-w-3xl mx-auto">
         <FadeIn>
           <div className="text-center mb-12">
             <p className="font-body text-xs tracking-[0.3em] uppercase text-gold mb-4">
               FAQ
             </p>
-            <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl text-charcoal leading-[1.05]">
+            <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl text-bark leading-[1.05]">
               Common
-              <span className="italic font-light text-terracotta-500"> Questions</span>
+              <span className="italic text-terracotta-600"> Questions</span>
             </h2>
           </div>
         </FadeIn>
@@ -34,7 +34,7 @@ export default function FAQ() {
                     <span className="font-heading text-2xl text-terracotta-300/60 leading-none mt-1 select-none">
                       {String(i + 1).padStart(2, "0")}
                     </span>
-                    <span className="font-heading text-xl md:text-2xl text-charcoal group-hover:text-terracotta-500 transition-colors duration-300 leading-snug">
+                    <span className="font-heading text-xl md:text-2xl text-bark group-hover:text-terracotta-600 transition-colors duration-300 leading-snug">
                       {item.question}
                     </span>
                   </span>
@@ -60,7 +60,7 @@ export default function FAQ() {
                     openIndex === i ? "max-h-80 pb-8" : "max-h-0"
                   }`}
                 >
-                  <p className="pl-11 md:pl-[3.25rem] text-charcoal/90 leading-[1.85] text-[15px] max-w-xl">
+                  <p className="pl-11 md:pl-[3.25rem] text-body leading-[1.85] text-[15px] max-w-xl">
                     {item.answer}
                   </p>
                 </div>

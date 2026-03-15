@@ -30,6 +30,8 @@
   --color-charcoal: #1A1714;
   --color-charcoal-light: #3D3831;
   --color-clay: #8B5E3C;
+  --color-bark: #3d3229;
+  --color-body: #5c5249;
 
   --font-heading: "Cormorant Garamond", serif;
   --font-body: "Outfit", sans-serif;
@@ -41,7 +43,7 @@ html {
 
 body {
   background-color: var(--color-cream);
-  color: var(--color-charcoal);
+  color: var(--color-body);
   font-family: var(--font-body);
 }
 
