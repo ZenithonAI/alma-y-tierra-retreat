@@ -3,14 +3,14 @@ import FadeIn from "./FadeIn";
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="relative py-32 md:py-40 px-8 md:px-16 overflow-hidden">
+    <section id="pricing" className="relative py-16 md:py-20 px-8 md:px-16 overflow-hidden">
       {/* Background blurs */}
       <div className="absolute top-32 left-0 w-96 h-96 bg-forest-100/30 rounded-full blur-[120px]" />
       <div className="absolute bottom-32 right-0 w-80 h-80 bg-terracotta-100/30 rounded-full blur-[100px]" />
 
       <div className="max-w-5xl mx-auto relative z-10">
         <FadeIn>
-          <div className="text-center mb-20">
+          <div className="text-center mb-12">
             <p className="font-body text-xs tracking-[0.3em] uppercase text-gold mb-4">
               Pricing
             </p>
@@ -18,7 +18,7 @@ export default function Pricing() {
               Investment
               <span className="italic font-light text-terracotta-500"> in Yourself</span>
             </h2>
-            <p className="text-charcoal-light/60 max-w-xl mx-auto text-[15px] font-light leading-relaxed">
+            <p className="text-charcoal/65 max-w-xl mx-auto text-[15px] leading-relaxed">
               {pricing.subheading}
             </p>
           </div>
@@ -75,7 +75,7 @@ export default function Pricing() {
                   </div>
                   <p
                     className={`text-xs tracking-[0.15em] uppercase font-body mb-2 ${
-                      option.highlighted ? "text-cream/50" : "text-charcoal-light/40"
+                      option.highlighted ? "text-cream/70" : "text-charcoal/50"
                     }`}
                   >
                     {option.period}
@@ -114,10 +114,10 @@ export default function Pricing() {
                           />
                         </svg>
                         <span
-                          className={`font-light ${
+                          className={`${
                             option.highlighted
-                              ? "text-cream/70"
-                              : "text-charcoal-light/60"
+                              ? "text-cream/85"
+                              : "text-charcoal/70"
                           }`}
                         >
                           {feature}

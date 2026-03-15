@@ -8,10 +8,10 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section id="faq" className="relative py-32 md:py-40 px-8 md:px-16 bg-sand/40">
+    <section id="faq" className="relative py-16 md:py-20 px-8 md:px-16 bg-sand/40">
       <div className="max-w-3xl mx-auto">
         <FadeIn>
-          <div className="text-center mb-20">
+          <div className="text-center mb-12">
             <p className="font-body text-xs tracking-[0.3em] uppercase text-gold mb-4">
               FAQ
             </p>
@@ -60,7 +60,7 @@ export default function FAQ() {
                     openIndex === i ? "max-h-80 pb-8" : "max-h-0"
                   }`}
                 >
-                  <p className="pl-11 md:pl-[3.25rem] text-charcoal-light/65 leading-[1.85] text-[15px] font-light max-w-xl">
+                  <p className="pl-11 md:pl-[3.25rem] text-charcoal/75 leading-[1.85] text-[15px] max-w-xl">
                     {item.answer}
                   </p>
                 </div>

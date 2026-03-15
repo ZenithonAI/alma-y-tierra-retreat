@@ -45,13 +45,13 @@ const iconSvgs: Record<string, React.ReactNode> = {
 
 export default function Inclusions() {
   return (
-    <section id="inclusions" className="relative py-32 md:py-40 px-8 md:px-16 bg-charcoal grain overflow-hidden">
+    <section id="inclusions" className="relative py-16 md:py-20 px-8 md:px-16 bg-charcoal grain overflow-hidden">
       {/* Warm accent glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-terracotta-900/20 rounded-full blur-[120px]" />
 
       <div className="max-w-6xl mx-auto relative z-10">
         <FadeIn>
-          <div className="text-center mb-20">
+          <div className="text-center mb-12">
             <p className="font-body text-xs tracking-[0.3em] uppercase text-gold mb-4">
               Everything You Need
             </p>
@@ -72,13 +72,13 @@ export default function Inclusions() {
                 {/* Corner accent */}
                 <div className="absolute top-0 right-0 w-8 h-8 border-t border-r border-gold/20 group-hover:border-gold/50 transition-colors duration-500" />
 
-                <div className="text-gold/70 group-hover:text-gold transition-colors duration-500 mb-6">
+                <div className="text-gold group-hover:text-gold-light transition-colors duration-500 mb-6">
                   {iconSvgs[item.title]}
                 </div>
                 <h3 className="font-heading text-xl text-cream mb-3 tracking-wide">
                   {item.title}
                 </h3>
-                <p className="text-cream/50 leading-[1.8] text-sm font-light">
+                <p className="text-cream/80 leading-[1.8] text-sm">
                   {item.description}
                 </p>
               </div>

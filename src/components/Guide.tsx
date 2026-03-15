@@ -4,7 +4,7 @@ import FadeIn from "./FadeIn";
 
 export default function Guide() {
   return (
-    <section id="guide" className="relative py-32 md:py-0 overflow-hidden">
+    <section id="guide" className="relative py-16 md:py-0 overflow-hidden">
       <div className="max-w-[1400px] mx-auto">
         <div className="grid lg:grid-cols-12 min-h-[600px] lg:min-h-[700px]">
           {/* Image — dramatic 7-column portrait */}
@@ -39,14 +39,14 @@ export default function Guide() {
                   {guide.name.split(" ")[1]}
                 </h2>
 
-                <p className="text-[11px] tracking-[0.15em] uppercase text-charcoal-light/50 mb-8 font-body">
+                <p className="text-[11px] tracking-[0.15em] uppercase text-charcoal/60 mb-8 font-body">
                   {guide.credentials}
                 </p>
 
                 {guide.bio.map((p, i) => (
                   <p
                     key={i}
-                    className="text-charcoal-light/75 leading-[1.85] mb-5 last:mb-0 text-[15px] font-light"
+                    className="text-charcoal/80 leading-[1.85] mb-5 last:mb-0 text-[15px]"
                   >
                     {p}
                   </p>

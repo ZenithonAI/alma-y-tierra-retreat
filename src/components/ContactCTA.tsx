@@ -44,7 +44,7 @@ export default function ContactCTA() {
   }
 
   return (
-    <section id="contact" className="relative py-32 md:py-40 px-8 md:px-16 overflow-hidden">
+    <section id="contact" className="relative py-16 md:py-20 px-8 md:px-16 overflow-hidden bg-sand/40">
       {/* Background warmth */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-terracotta-100/20 rounded-full blur-[120px]" />
 
@@ -64,7 +64,7 @@ export default function ContactCTA() {
                   Begin?
                 </span>
               </h2>
-              <p className="text-charcoal-light/60 leading-[1.85] text-[15px] font-light mb-12">
+              <p className="text-charcoal/70 leading-[1.85] text-[15px] mb-12">
                 {contact.subheading}
               </p>
 
@@ -77,7 +77,7 @@ export default function ContactCTA() {
                       <p className="text-[10px] tracking-[0.3em] uppercase text-gold/70 mb-1 font-body">
                         Location
                       </p>
-                      <p className="text-charcoal-light/50 text-sm font-light">
+                      <p className="text-charcoal/60 text-sm">
                         Oaxaca de Juarez, Mexico
                       </p>
                     </div>
@@ -85,7 +85,7 @@ export default function ContactCTA() {
                       <p className="text-[10px] tracking-[0.3em] uppercase text-gold/70 mb-1 font-body">
                         Dates
                       </p>
-                      <p className="text-charcoal-light/50 text-sm font-light">
+                      <p className="text-charcoal/60 text-sm">
                         November 8–14, 2026
                       </p>
                     </div>
@@ -93,7 +93,7 @@ export default function ContactCTA() {
                       <p className="text-[10px] tracking-[0.3em] uppercase text-gold/70 mb-1 font-body">
                         Availability
                       </p>
-                      <p className="text-charcoal-light/50 text-sm font-light">
+                      <p className="text-charcoal/60 text-sm">
                         12 spots — limited enrollment
                       </p>
                     </div>
@@ -112,7 +112,7 @@ export default function ContactCTA() {
                   <p className="font-heading text-3xl text-charcoal mb-3">
                     Message Sent
                   </p>
-                  <p className="text-charcoal-light/50 text-sm font-light">
+                  <p className="text-charcoal/60 text-sm">
                     Thank you for reaching out. We&apos;ll be in touch within 24 hours.
                   </p>
                 </div>
@@ -123,7 +123,7 @@ export default function ContactCTA() {
                   <div>
                     <label
                       htmlFor="name"
-                      className="block text-[10px] tracking-[0.3em] uppercase text-charcoal-light/50 mb-3 font-body"
+                      className="block text-[11px] tracking-[0.2em] uppercase text-charcoal/60 mb-3 font-body font-medium"
                     >
                       Name
                     </label>
@@ -132,14 +132,14 @@ export default function ContactCTA() {
                       id="name"
                       name="name"
                       required
-                      className="w-full px-0 py-3 bg-transparent border-b border-charcoal/10 text-charcoal placeholder:text-charcoal/25 focus:outline-none focus:border-terracotta-400 transition-colors text-[15px] font-light"
+                      className="w-full px-0 py-3 bg-transparent border-b-2 border-charcoal/20 text-charcoal placeholder:text-charcoal/40 focus:outline-none focus:border-terracotta-500 transition-colors text-[15px]"
                       placeholder="Your full name"
                     />
                   </div>
                   <div>
                     <label
                       htmlFor="email"
-                      className="block text-[10px] tracking-[0.3em] uppercase text-charcoal-light/50 mb-3 font-body"
+                      className="block text-[11px] tracking-[0.2em] uppercase text-charcoal/60 mb-3 font-body font-medium"
                     >
                       Email
                     </label>
@@ -148,7 +148,7 @@ export default function ContactCTA() {
                       id="email"
                       name="email"
                       required
-                      className="w-full px-0 py-3 bg-transparent border-b border-charcoal/10 text-charcoal placeholder:text-charcoal/25 focus:outline-none focus:border-terracotta-400 transition-colors text-[15px] font-light"
+                      className="w-full px-0 py-3 bg-transparent border-b-2 border-charcoal/20 text-charcoal placeholder:text-charcoal/40 focus:outline-none focus:border-terracotta-500 transition-colors text-[15px]"
                       placeholder="you@example.com"
                     />
                   </div>
@@ -157,7 +157,7 @@ export default function ContactCTA() {
                 <div>
                   <label
                     htmlFor="message"
-                    className="block text-[10px] tracking-[0.3em] uppercase text-charcoal-light/50 mb-3 font-body"
+                    className="block text-[11px] tracking-[0.2em] uppercase text-charcoal/60 mb-3 font-body font-medium"
                   >
                     Message
                   </label>
@@ -166,7 +166,7 @@ export default function ContactCTA() {
                     name="message"
                     required
                     rows={5}
-                    className="w-full px-0 py-3 bg-transparent border-b border-charcoal/10 text-charcoal placeholder:text-charcoal/25 focus:outline-none focus:border-terracotta-400 transition-colors resize-none text-[15px] font-light"
+                    className="w-full px-0 py-3 bg-transparent border-b-2 border-charcoal/20 text-charcoal placeholder:text-charcoal/40 focus:outline-none focus:border-terracotta-500 transition-colors resize-none text-[15px]"
                     placeholder="Tell us about yourself and any questions you have..."
                   />
                 </div>

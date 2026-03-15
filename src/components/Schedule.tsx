@@ -3,13 +3,13 @@ import FadeIn from "./FadeIn";
 
 export default function Schedule() {
   return (
-    <section id="schedule" className="relative py-32 md:py-40 px-8 md:px-16 overflow-hidden">
+    <section id="schedule" className="relative py-16 md:py-20 px-8 md:px-16 overflow-hidden">
       {/* Subtle background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-cream via-sand/50 to-cream" />
 
       <div className="max-w-5xl mx-auto relative z-10">
         <FadeIn>
-          <div className="text-center mb-20">
+          <div className="text-center mb-12">
             <p className="font-body text-xs tracking-[0.3em] uppercase text-gold mb-4">
               7 Days of Transformation
             </p>
@@ -43,7 +43,7 @@ export default function Schedule() {
 
                 {/* Description */}
                 <div className="md:col-span-7">
-                  <p className="text-charcoal-light/70 leading-[1.85] text-[15px] font-light md:pl-8 md:border-l border-gold/20">
+                  <p className="text-charcoal/70 leading-[1.85] text-[15px] md:pl-8 md:border-l border-gold/20">
                     {day.description}
                   </p>
                 </div>
