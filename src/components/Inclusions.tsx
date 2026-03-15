@@ -78,7 +78,7 @@ export default function Inclusions() {
                 <h3 className="font-heading text-xl text-cream mb-3 tracking-wide">
                   {item.title}
                 </h3>
-                <p className="text-cream/80 leading-[1.8] text-sm">
+                <p className="text-cream/90 leading-[1.8] text-sm">
                   {item.description}
                 </p>
               </div>

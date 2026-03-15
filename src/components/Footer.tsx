@@ -17,14 +17,14 @@ export default function Footer() {
               <span className="italic font-light text-gold"> y </span>
               <span>Sombra</span>
             </p>
-            <p className="text-cream/30 text-sm font-light leading-relaxed">
+            <p className="text-cream/60 text-sm leading-relaxed">
               {siteConfig.tagline}
             </p>
           </div>
 
           {/* Quick links */}
           <div>
-            <p className="text-[10px] tracking-[0.3em] uppercase text-gold/60 mb-5 font-body">
+            <p className="text-[10px] tracking-[0.3em] uppercase text-gold mb-5 font-body">
               Navigate
             </p>
             <div className="grid grid-cols-2 gap-y-3 gap-x-6">
@@ -32,7 +32,7 @@ export default function Footer() {
                 <a
                   key={link}
                   href={`#${link.toLowerCase()}`}
-                  className="text-cream/40 hover:text-cream transition-colors text-sm font-light"
+                  className="text-cream/70 hover:text-cream transition-colors text-sm"
                 >
                   {link}
                 </a>
@@ -42,21 +42,21 @@ export default function Footer() {
 
           {/* Info */}
           <div>
-            <p className="text-[10px] tracking-[0.3em] uppercase text-gold/60 mb-5 font-body">
+            <p className="text-[10px] tracking-[0.3em] uppercase text-gold mb-5 font-body">
               Details
             </p>
             <div className="space-y-3">
-              <p className="text-cream/40 text-sm font-light">{siteConfig.dates}</p>
-              <p className="text-cream/40 text-sm font-light">{siteConfig.location}</p>
-              <p className="text-cream/40 text-sm font-light">12 guests max</p>
+              <p className="text-cream/70 text-sm">{siteConfig.dates}</p>
+              <p className="text-cream/70 text-sm">{siteConfig.location}</p>
+              <p className="text-cream/70 text-sm">12 guests max</p>
             </div>
           </div>
         </div>
 
         {/* Bottom bar */}
         <div className="border-t border-cream/5 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <span className="text-cream/20 text-xs font-light">{footer.text}</span>
-          <span className="text-cream/20 text-xs font-light">
+          <span className="text-cream/50 text-xs">{footer.text}</span>
+          <span className="text-cream/50 text-xs">
             Built by{" "}
             <a
               href={footer.builtByUrl}

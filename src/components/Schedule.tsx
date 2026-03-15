@@ -43,7 +43,7 @@ export default function Schedule() {
 
                 {/* Description */}
                 <div className="md:col-span-7">
-                  <p className="text-charcoal/70 leading-[1.85] text-[15px] md:pl-8 md:border-l border-gold/20">
+                  <p className="text-charcoal/90 leading-[1.85] text-[15px] md:pl-8 md:border-l border-gold/20">
                     {day.description}
                   </p>
                 </div>

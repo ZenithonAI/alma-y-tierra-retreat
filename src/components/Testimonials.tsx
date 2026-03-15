@@ -38,7 +38,7 @@ export default function Testimonials() {
                   <p className="font-body font-medium text-charcoal text-sm tracking-wide">
                     {testimonials.items[0].name}
                   </p>
-                  <p className="font-body text-xs text-charcoal/50 tracking-wider uppercase">
+                  <p className="font-body text-xs text-charcoal/70 tracking-wider uppercase">
                     {testimonials.items[0].location}
                   </p>
                 </div>
@@ -55,14 +55,14 @@ export default function Testimonials() {
                 <div className="absolute -top-4 -left-2 font-heading text-6xl text-terracotta-200/50 select-none">
                   &ldquo;
                 </div>
-                <p className="text-charcoal/75 leading-[1.85] text-[15px] italic pl-6 mb-6">
+                <p className="text-charcoal/90 leading-[1.85] text-[15px] italic pl-6 mb-6">
                   {item.quote}
                 </p>
                 <div className="pl-6 flex items-center gap-3">
                   <div className="w-5 h-px bg-gold/50" />
                   <p className="text-xs tracking-[0.15em] uppercase font-body">
                     <span className="text-charcoal">{item.name}</span>
-                    <span className="text-charcoal/50"> / {item.location}</span>
+                    <span className="text-charcoal/70"> / {item.location}</span>
                   </p>
                 </div>
               </div>

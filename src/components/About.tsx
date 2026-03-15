@@ -53,7 +53,7 @@ export default function About() {
               {about.paragraphs.map((p, i) => (
                 <p
                   key={i}
-                  className="text-charcoal/80 leading-[1.85] mb-5 last:mb-0 text-[15px]"
+                  className="text-charcoal leading-[1.85] mb-5 last:mb-0 text-[15px]"
                 >
                   {p}
                 </p>

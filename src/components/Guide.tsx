@@ -6,7 +6,7 @@ export default function Guide() {
   return (
     <section id="guide" className="relative py-16 md:py-0 overflow-hidden">
       <div className="max-w-[1400px] mx-auto">
-        <div className="grid lg:grid-cols-12 min-h-[600px] lg:min-h-[700px]">
+        <div className="grid lg:grid-cols-12 min-h-[400px] lg:min-h-[500px]">
           {/* Image — dramatic 7-column portrait */}
           <FadeIn direction="left" className="lg:col-span-7 relative">
             <div className="relative h-[400px] lg:h-full min-h-[400px]">
@@ -23,7 +23,7 @@ export default function Guide() {
           </FadeIn>
 
           {/* Text — 5 columns with vertical centering */}
-          <div className="lg:col-span-5 flex items-center px-8 md:px-16 py-16 lg:py-24">
+          <div className="lg:col-span-5 flex items-center px-8 md:px-16 py-12 lg:py-16">
             <FadeIn direction="right" delay={200}>
               <div>
                 <div className="greca-border mb-10 w-20" />
@@ -39,14 +39,14 @@ export default function Guide() {
                   {guide.name.split(" ")[1]}
                 </h2>
 
-                <p className="text-[11px] tracking-[0.15em] uppercase text-charcoal/60 mb-8 font-body">
+                <p className="text-[11px] tracking-[0.15em] uppercase text-charcoal/80 mb-8 font-body">
                   {guide.credentials}
                 </p>
 
                 {guide.bio.map((p, i) => (
                   <p
                     key={i}
-                    className="text-charcoal/80 leading-[1.85] mb-5 last:mb-0 text-[15px]"
+                    className="text-charcoal leading-[1.85] mb-5 last:mb-0 text-[15px]"
                   >
                     {p}
                   </p>

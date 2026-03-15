@@ -18,7 +18,7 @@ export default function Pricing() {
               Investment
               <span className="italic font-light text-terracotta-500"> in Yourself</span>
             </h2>
-            <p className="text-charcoal/65 max-w-xl mx-auto text-[15px] leading-relaxed">
+            <p className="text-charcoal/90 max-w-xl mx-auto text-[15px] leading-relaxed">
               {pricing.subheading}
             </p>
           </div>
@@ -75,7 +75,7 @@ export default function Pricing() {
                   </div>
                   <p
                     className={`text-xs tracking-[0.15em] uppercase font-body mb-2 ${
-                      option.highlighted ? "text-cream/70" : "text-charcoal/50"
+                      option.highlighted ? "text-cream/80" : "text-charcoal/70"
                     }`}
                   >
                     {option.period}
@@ -116,8 +116,8 @@ export default function Pricing() {
                         <span
                           className={`${
                             option.highlighted
-                              ? "text-cream/85"
-                              : "text-charcoal/70"
+                              ? "text-cream/90"
+                              : "text-charcoal/90"
                           }`}
                         >
                           {feature}

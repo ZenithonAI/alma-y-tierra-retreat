@@ -60,7 +60,7 @@ export default function FAQ() {
                     openIndex === i ? "max-h-80 pb-8" : "max-h-0"
                   }`}
                 >
-                  <p className="pl-11 md:pl-[3.25rem] text-charcoal/75 leading-[1.85] text-[15px] max-w-xl">
+                  <p className="pl-11 md:pl-[3.25rem] text-charcoal/90 leading-[1.85] text-[15px] max-w-xl">
                     {item.answer}
                   </p>
                 </div>
