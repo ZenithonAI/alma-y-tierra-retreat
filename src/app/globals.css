@@ -1,0 +1,158 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-terracotta-50: #fdf5f0;
+  --color-terracotta-100: #fbe8dd;
+  --color-terracotta-200: #f5ccb3;
+  --color-terracotta-300: #efa985;
+  --color-terracotta-400: #e07d4e;
+  --color-terracotta-500: #c4572e;
+  --color-terracotta-600: #a84524;
+  --color-terracotta-700: #8a371e;
+  --color-terracotta-800: #6d2c1a;
+  --color-terracotta-900: #4e1f13;
+
+  --color-forest-50: #f0f7f2;
+  --color-forest-100: #dceee1;
+  --color-forest-200: #b5dbc1;
+  --color-forest-300: #87c29b;
+  --color-forest-400: #5da477;
+  --color-forest-500: #3d6e4f;
+  --color-forest-600: #315a40;
+  --color-forest-700: #284834;
+  --color-forest-800: #1f3828;
+  --color-forest-900: #16271c;
+
+  --color-cream: #FAF6F1;
+  --color-sand: #F0E8DB;
+  --color-gold: #C9A96E;
+  --color-gold-light: #D4BC8E;
+  --color-charcoal: #1A1714;
+  --color-charcoal-light: #3D3831;
+  --color-clay: #8B5E3C;
+
+  --font-heading: "Cormorant Garamond", serif;
+  --font-body: "Outfit", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-charcoal);
+  font-family: var(--font-body);
+}
+
+::selection {
+  background-color: var(--color-terracotta-200);
+  color: var(--color-charcoal);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+/* Grain texture overlay */
+.grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.03;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 256px 256px;
+}
+
+/* Zapotec greca pattern */
+.greca-border {
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='12' viewBox='0 0 40 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 12V8h4V4h4V0h8v4h4v4h4v4h-4V8h-4V4h-4v4H8v4H4v-4H0v4zm20 0V8h4V4h4V0h8v4h4v-4' stroke='%23C9A96E' stroke-width='1' fill='none'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  background-size: 40px 12px;
+  height: 12px;
+}
+
+.greca-border-dark {
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='12' viewBox='0 0 40 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 12V8h4V4h4V0h8v4h4v4h4v4h-4V8h-4V4h-4v4H8v4H4v-4H0v4zm20 0V8h4V4h4V0h8v4h4v-4' stroke='%23FAF6F1' stroke-width='1' opacity='0.2' fill='none'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  background-size: 40px 12px;
+  height: 12px;
+}
+
+/* Decorative greca sidebar */
+.greca-vertical {
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='40' viewBox='0 0 12 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h4v4h4v4h4v8H8v4H4v4H0v-4h4v-4h4V8H4V4H0V0z' stroke='%23C9A96E' stroke-width='0.75' fill='none'/%3E%3C/svg%3E");
+  background-repeat: repeat-y;
+  background-size: 12px 40px;
+  width: 12px;
+}
+
+/* Staggered animation delays */
+.stagger-1 { animation-delay: 100ms; }
+.stagger-2 { animation-delay: 200ms; }
+.stagger-3 { animation-delay: 300ms; }
+.stagger-4 { animation-delay: 400ms; }
+.stagger-5 { animation-delay: 500ms; }
+.stagger-6 { animation-delay: 600ms; }
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(32px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide-in-right {
+  from { opacity: 0; transform: translateX(40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slide-in-left {
+  from { opacity: 0; transform: translateX(-40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Hero-specific animations */
+@keyframes hero-text-reveal {
+  from { opacity: 0; transform: translateY(60px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-hero-text {
+  animation: hero-text-reveal 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  opacity: 0;
+}
+
+.animate-hero-text-delay-1 {
+  animation: hero-text-reveal 1.2s cubic-bezier(0.22, 1, 0.36, 1) 0.3s forwards;
+  opacity: 0;
+}
+
+.animate-hero-text-delay-2 {
+  animation: hero-text-reveal 1.2s cubic-bezier(0.22, 1, 0.36, 1) 0.6s forwards;
+  opacity: 0;
+}
+
+.animate-hero-text-delay-3 {
+  animation: hero-text-reveal 1.2s cubic-bezier(0.22, 1, 0.36, 1) 0.9s forwards;
+  opacity: 0;
+}
+
+/* Horizontal rule styling */
+hr.greca {
+  border: none;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--color-gold) 20%,
+    var(--color-gold) 80%,
+    transparent 100%
+  );
+  opacity: 0.4;
+}
