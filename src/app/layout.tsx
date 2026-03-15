@@ -18,11 +18,11 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://alma-y-tierra.vercel.app"),
-  title: "Alma y Tierra — Therapeutic Yoga Retreat in Oaxaca, Mexico",
+  title: "Sol y Sombra — Therapeutic Yoga Retreat in Oaxaca, Mexico",
   description:
     "A 7-day therapeutic yoga retreat in Oaxaca, Mexico. Daily yoga, farm-to-table meals, cultural excursions, and deep restoration. November 8–14, 2026.",
   openGraph: {
-    title: "Alma y Tierra — Therapeutic Yoga Retreat in Oaxaca",
+    title: "Sol y Sombra — Therapeutic Yoga Retreat in Oaxaca",
     description:
       "Reconnect with yourself on a 7-day yoga retreat in Oaxaca, Mexico. Limited to 12 guests.",
     type: "website",

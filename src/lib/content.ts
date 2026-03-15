@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "Alma y Tierra Retreat",
+  name: "Sol y Sombra Retreat",
   tagline: "A Therapeutic Yoga Retreat in Oaxaca, Mexico",
   dates: "November 8–14, 2026",
   location: "Oaxaca, Mexico",

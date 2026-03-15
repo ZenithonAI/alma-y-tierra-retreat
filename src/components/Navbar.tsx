@@ -24,13 +24,13 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-8 md:px-16 flex items-center justify-between h-20">
         <a href="#hero" className="font-heading text-2xl tracking-wide group">
           <span className={`transition-colors duration-500 ${scrolled ? "text-charcoal" : "text-cream"}`}>
-            Alma
+            Sol
           </span>
           <span className={`italic font-light transition-colors duration-500 ${scrolled ? "text-gold" : "text-gold-light"}`}>
             {" "}y{" "}
           </span>
           <span className={`transition-colors duration-500 ${scrolled ? "text-charcoal" : "text-cream"}`}>
-            Tierra
+            Sombra
           </span>
         </a>
 

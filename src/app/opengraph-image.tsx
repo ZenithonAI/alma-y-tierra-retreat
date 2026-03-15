@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "Alma y Tierra — Therapeutic Yoga Retreat in Oaxaca, Mexico";
+export const alt = "Sol y Sombra — Therapeutic Yoga Retreat in Oaxaca, Mexico";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -116,7 +116,7 @@ export default function OGImage() {
               fontFamily: "serif",
             }}
           >
-            Alma
+            Sol
           </span>
           <span
             style={{
@@ -136,7 +136,7 @@ export default function OGImage() {
               fontFamily: "serif",
             }}
           >
-            Tierra
+            Sombra
           </span>
         </div>
       </div>

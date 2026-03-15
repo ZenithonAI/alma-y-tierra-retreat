@@ -13,9 +13,9 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <p className="font-heading text-3xl text-cream mb-3">
-              <span>Alma</span>
+              <span>Sol</span>
               <span className="italic font-light text-gold"> y </span>
-              <span>Tierra</span>
+              <span>Sombra</span>
             </p>
             <p className="text-cream/30 text-sm font-light leading-relaxed">
               {siteConfig.tagline}
